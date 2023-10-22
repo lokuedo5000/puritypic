@@ -1,0 +1,12 @@
+{
+  "name": "imgminify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "imgminify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lwte",
+  "license": "ISC"
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuracion - PurityPic</title>
+    <!-- Iconos -->
+    <link rel="stylesheet" href="/lib/icomoon/icomoon.css">
+
+    <!-- Roboto -->
+    <link rel="stylesheet" href="/lib/roboto/roboto.css">
+
+    <!-- Materializecss -->
+    <link rel="stylesheet" href="/lib/materialize/css/materialize.min.css">
+
+    <!-- Owl -->
+    <link rel="stylesheet" href="/lib/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/lib/owl/assets/owl.theme.default.min.css">
+
+    <!-- puritypic -->
+    <link rel="stylesheet" href="/css/puritypic.c.css">
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <%- include('../include/menu.ejs') %>
+
+        <div class="body">
+            <div class="container">
+                <div class="cog-list z-depth-1">
+                    <h5>Advertencia sobre transparencia en PNG:</h5>
+                    <p>
+                        Es importante destacar que, aunque el formato PNG es conocido por mantener la transparencia, la
+                        compresión de imágenes PNG puede afectar la calidad de la transparencia en algunos casos. Esto
+                        significa que, después de la compresión, la transparencia en imágenes PNG podría no ser tan
+                        nítida como la original.
+                    </p>
+                    <h5 class="title-h">Ajustes</h5>
+                    <div class="sprt-row">
+                        <div class="title-row">
+                            Nivel Compresión de imágenes
+                        </div>
+                        <form action="#" class="m0" id="form-level">
+                            <div class="range-field m0">
+                                <input type="range" id="test5" min="0" max="100" value="<%= cog.level %>" />
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="sprt-row">
+                        <div class="title-row">
+                            Ubicación de la base de datos
+                        </div>
+                        <form action="#" class="m0" id="form-save-in">
+                            <select class="select-cog-save">
+                                <option value="" disabled>Seleccionar ubicacion</option>
+                                <option value="appdata" <%= cog.db === "appdata" ? "selected" : "" %>>AppData</option>
+                                <option value="documents" <%= cog.db === "documents" ? "selected" : "" %>>Documentos</option>
+                                <option value="pictures" <%= cog.db === "pictures" ? "selected" : "" %>>Imagenes</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jquery -->
+        <script src="/lib/jQuery/jquery.min.js"></script>
+        <!-- materialize -->
+        <script src="/lib/materialize/js/materialize.min.js"></script>
+        <script src="/lib/materialize/js/init.js"></script>
+
+        <!-- util Code -->
+        <script src="/js/code.util.kit.js"></script>
+
+        <!-- puritypic -->
+        <script src="/js/puritypic.j.js"></script>
+
+</body>
+
+</html>

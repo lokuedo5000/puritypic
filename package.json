@@ -1,0 +1,34 @@
+{
+  "name": "puritypic",
+  "title": "PurityPic",
+  "version": "1.0.0",
+  "server": {
+    "port": 3091,
+    "host": "http://localhost",
+    "pathviews": "app/views",
+    "pathpublic": "app/public"
+  },
+  "description": "PurityPic es una aplicación intuitiva y elegante diseñada para perfeccionar tus imágenes. Con PurityPic, puedes reducir el tamaño de tus fotos sin comprometer la calidad.",
+  "tags": "Image Optimization, Image Compression, Picture Clarity, Photo Enhancement, Quality Imaging, Visual Elegance, Format Conversion",
+  "main": "puritypic.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devlwte/puritypic.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lwte",
+  "license": "MIT",
+  "dependencies": {
+    "@npmcli/fs": "^3.1.0",
+    "sqlite3": "^5.1.6",
+    "moment": "^2.29.4",
+    "sharp": "^0.32.6"
+  },
+  "webPreferences": {
+    "nodeIntegration": true,
+    "contextIsolation": true
+  }
+}

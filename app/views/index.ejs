@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PurityPic | Inicio</title>
+    <!-- Iconos -->
+    <link rel="stylesheet" href="/lib/icomoon/icomoon.css">
+
+    <!-- Roboto -->
+    <link rel="stylesheet" href="/lib/roboto/roboto.css">
+
+    <!-- Materializecss -->
+    <link rel="stylesheet" href="/lib/materialize/css/materialize.min.css">
+
+    <!-- Owl -->
+    <link rel="stylesheet" href="/lib/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/lib/owl/assets/owl.theme.default.min.css">
+
+    <!-- puritypic -->
+    <link rel="stylesheet" href="/css/puritypic.c.css">
+    <link rel="stylesheet" href="/css/menu.css">
+</head>
+
+<body>
+    <!-- Menu -->
+    <%- include('../include/menu.ejs') %>
+
+        <div class="body">
+            <div class="menu-compress">
+                <li><a href="/">Comprimir</a></li>
+                <li><a href="/results">Resultados</a></li>
+            </div>
+            <div class="menu-action">
+                <li><a href="#" class="disabled send-img">Convertir</a></li>
+            </div>
+            <div class="contenedor-img-compress">
+                <div class="icon-add-drag-drop icon-add_circle"></div>
+                <div class="drag-drop" id="dropzone">
+                    <div class="drag-drop-body">
+                        <div class="container-all">
+                            <div class="apps-container" id="list-imgs">
+                                <% for( let g=0; g < 0; g++ ) { %>
+                                    <div class="app-col">
+                                        <div class="img-select" style="background-image: url();"></div>
+                                        <div class="title-all">
+                                            Nombre
+                                        </div>
+                                    </div>
+                                    <% } %>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jquery -->
+        <script src="/lib/jQuery/jquery.min.js"></script>
+        <!-- materialize -->
+        <script src="/lib/materialize/js/materialize.min.js"></script>
+        <script src="/lib/materialize/js/init.js"></script>
+
+        <!-- progressbar -->
+        <script src="/lib/progressbar/progressbar.min.js"></script>
+
+        <!-- cache -->
+        <script src="/js/cache.js"></script>
+
+        <!-- util Code -->
+        <script src="/js/code.util.kit.js"></script>
+
+        <!-- puritypic -->
+        <script src="/js/me.js"></script>
+        <script src="/js/puritypic.j.js"></script>
+
+        <script>
+            let options = {
+                format: "png",
+                data: "data1",
+                quality: 80,
+            };
+            let { format, ...lista } = options;
+            console.log(lista);
+        </script>
+
+</body>
+
+</html>
